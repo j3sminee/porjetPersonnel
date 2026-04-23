@@ -1,16 +1,25 @@
-img{
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
+.page {
+  position: relative;
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+img {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
 }
 
 .choixUsager {
+  position: absolute;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 40px;
   background-color: #191919b5;
   padding: 20px;
+  bottom: 0;
+  width: 100%;
 }
 
 .choix {
