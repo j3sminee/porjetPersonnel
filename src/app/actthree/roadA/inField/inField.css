@@ -1,0 +1,59 @@
+.page {
+  position: relative;
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.choixUsager {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  background-color: #191919b5;
+  padding: 20px;
+  bottom: 0;
+  width: 100%;
+}
+
+.choix {
+  background-color: #191919;
+  color: darkgray;
+  padding: 15px;
+  border: 2 solid;
+  border-image: conic-gradient(
+      from var(--angle),
+      #ffd6a5,
+      #fdffb6,
+      #9bf6ff,
+      #a0c4ff,
+      #bdb2ff,
+      #ffc6ff
+    )
+    1;
+  animation: 5s rotate linear infinite;
+  box-shadow: 0 0 5px #ebf5f7;
+}
+
+@keyframes rotate {
+  to {
+    --angle: 360deg;
+  }
+}
+
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.choix:hover {
+  background-color: black;
+  color: white;
+}

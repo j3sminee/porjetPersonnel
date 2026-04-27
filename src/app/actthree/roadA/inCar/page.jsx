@@ -1,12 +1,12 @@
 import Link from "next/link";
-import "./ClientPage.css";
+import "./inCar.css";
 
 export default function Home() {
   return (
     <div className="page">
-        <img src="./pictures/zaz3.jpg" alt="" />
+       <video src="../../../videos/darlingCar.mp4" type="video/mp4" autoPlay></video>
         <div className="choixUsager">
-        <Link className="choix" href="./actthree/roadA/inCar"><span>CHOIX A</span></Link> 
+        <Link className="choix" href="./inField"><span>CHOIX A</span></Link> 
         <Link className="choix" href="./pageidk"><span>CHOIX B</span></Link> 
         </div>
     </div>
