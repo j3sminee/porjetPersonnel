@@ -3,12 +3,10 @@ import "./ClientPage.css";
 
 export default function Home() {
   return (
-    <div className="page">
-        <img src="./pictures/zaz3.jpg" alt="" />
-        <div className="choixUsager">
-        <Link className="choix" href="./actthree/roadA/inCar"><span>CHOIX A</span></Link> 
-        <Link className="choix" href="./pageidk"><span>CHOIX B</span></Link> 
-        </div>
+    <div className="start">
+        <h1>Title</h1>
+        <h3>Synopsis</h3>
+        <Link className="begin" href="./actone"><span>Commencer</span></Link> 
     </div>
   );
 }

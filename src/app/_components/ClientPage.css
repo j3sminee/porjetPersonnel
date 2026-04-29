@@ -1,59 +1,35 @@
-.page {
-  position: relative;
-  height: 100vh;
-  overflow-y: hidden;
-}
-
-img {
-  width: 100vw;
-  height: 100vh;
-  object-fit: cover;
-}
-
-.choixUsager {
+.start {
   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 40px;
-  background-color: #191919b5;
-  padding: 20px;
-  bottom: 0;
-  width: 100%;
 }
 
-.choix {
+h1{
+  text-transform: uppercase;
+  font-size: 60px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+h3{
+  font-weight: 300;
+  padding: 16px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.begin{
+  color: rgb(191, 191, 191);
   background-color: #191919;
-  color: darkgray;
   padding: 15px;
-  border: 2 solid;
-  border-image: conic-gradient(
-      from var(--angle),
-      #ffd6a5,
-      #fdffb6,
-      #9bf6ff,
-      #a0c4ff,
-      #bdb2ff,
-      #ffc6ff
-    )
-    1;
-  animation: 5s rotate linear infinite;
-  box-shadow: 0 0 5px #ebf5f7;
-}
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 700;
 
-@keyframes rotate {
-  to {
-    --angle: 360deg;
+  &:hover{
+    background-color: black;
+    color: white;
   }
-}
-
-@property --angle {
-  syntax: "<angle>";
-  initial-value: 0deg;
-  inherits: false;
-}
-
-.choix:hover {
-  background-color: black;
-  color: white;
 }
