@@ -4,7 +4,7 @@
   overflow-y: hidden;
 }
 
-img {
+video {
   width: 100vw;
   height: 100vh;
   object-fit: cover;
@@ -20,9 +20,20 @@ img {
   padding: 20px;
   bottom: 0;
   width: 100%;
+  opacity: 0;
+  transform: translateY(20px);
+  pointer-events: none;
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.choixUsager.visible {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
 }
 
 .choix {
+  text-transform: uppercase;
   background-color: #191919;
   color: darkgray;
   padding: 15px;

@@ -6,8 +6,8 @@ export default function Home() {
     <div className="page">
        <video src="../../videos/gettingReady.webm" type="video/mp4" autoPlay></video>
         <div className="choixUsager">
-        <Link className="choix" href="./harnaisRouge"><span>Harnais rouge</span></Link> 
-        <Link className="choix" href="./harnaisBleu"><span>Harnais Bleu</span></Link> 
+        <Link className="choix" href="actthree/harnaisRouge"><span>Harnais rouge</span></Link> 
+        <Link className="choix" href="actthree/harnaisBleu"><span>Harnais Bleu</span></Link> 
         </div>
     </div>
   );
