@@ -4,9 +4,9 @@ import "./ClientPage.css";
 export default function Home() {
   return (
     <div className="start">
-        <h1>Title</h1>
+        <h1>Entre deux regards</h1>
         <h3>Synopsis</h3>
-        <Link className="begin" href="./actone"><span>Commencer</span></Link> 
+        <Link className="begin" href="./start"><span>Commencer</span></Link> 
     </div>
   );
 }
