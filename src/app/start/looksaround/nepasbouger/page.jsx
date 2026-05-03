@@ -20,11 +20,11 @@ export default function Home() {
     <div className="page">
       <video src="../../../videos/morningnightmare.webm" type="video/mp4" autoPlay />
       <div className={`choixUsager ${showChoices ? "visible" : ""}`}> 
-        <Link className="choix" href="./actthree/roadA/inCar">
+        <Link className="choix" href="./reveil/ignore">
           <span>ignorer Darling</span>
         </Link>
 
-        <Link className="choix" href="./actone/looksaround">
+        <Link className="choix" href="./reveil/ignore">
           <span>fermer la porte</span>
         </Link>
       </div>
