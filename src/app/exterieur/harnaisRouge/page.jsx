@@ -4,7 +4,7 @@ import "./harnaisRouge.css";
 export default function Home() {
   return (
     <div className="page">
-       <video src="../../../videos/harnaisrouge.webm" type="video/mp4" autoPlay></video>
+       <video src="../../../videos/harnaisrouge.webm" type="video/webm" autoPlay></video>
     </div>
   );
 }

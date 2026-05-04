@@ -18,7 +18,7 @@ export default function Home() {
   //ajoute une classe "visible" quand les choix apparaîssent (pour ensuite pouvoir ajouter une transition plus smooth)
   return (
     <div className="page">
-      <video src="../../videos/doorclosed.webm" type="video/mp4" autoPlay />
+      <video src="../../videos/doorclosed.webm" type="video/webm" autoPlay />
       <div className={`choixUsager ${showChoices ? "visible" : ""}`}> 
         <Link className="choix" href="./start/bark">
           <span>pleure à la porte</span>
