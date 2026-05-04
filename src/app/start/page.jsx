@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import "./pageone.css";
+import "./videoPage.css";
 import { useEffect, useState } from "react";
 
 export default function Home() {
