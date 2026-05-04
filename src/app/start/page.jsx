@@ -10,22 +10,6 @@ export default function Home() {
 
   //ajoute les choix juste à la fin de la vidéo
   useEffect(() => {
-
-    const video = videoRef.current;
-    if (!video) return;
-
-    const handleLoadedData = () =>{
-      setIsLoaded(true);
-      console.log("Video first frame loaded");
-    };
-
-    video.addEventListener('loadeddata', handleLoadedData);
-
-    return () =>{
-      video.removeEventListener('loadeddata', handleLoadedData);
-    }
-
-
     const timer = setTimeout(() => {
       setShowChoices(true);
     }, 4500);
@@ -36,7 +20,7 @@ export default function Home() {
   //ajoute une classe "visible" quand les choix apparaîssent (pour ensuite pouvoir ajouter une transition plus smooth)
   return (
     <div className="page">
-      <video ref={videoRef} src="../videos/startall.webm" type="video/webm" autoPlay />
+      <video src="../videos/startall.webm" type="video/webm" autoPlay />
       <div className={`choixUsager ${showChoices ? "visible" : ""}`}> 
         <Link className="choix" href="./start/bark">
           <span>aboyer pour l’alerter</span>
