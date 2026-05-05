@@ -10,7 +10,7 @@ export default function Home() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowChoices(true);
-    }, 50000);
+    }, 30000);
 
     return () => clearTimeout(timer);
   }, []);
@@ -20,11 +20,11 @@ export default function Home() {
     <div className="page">
       <video src="../../videos/nudges.webm" type="video/webm" autoPlay />
       <div className={`choixUsager ${showChoices ? "visible" : ""}`}> 
-        <Link className="choix" href="./exterieur/harnaisBleu">
+        <Link className="choix" href="../../exterieur/harnaisBleu">
           <span>harnais bleu</span>
         </Link>
 
-        <Link className="choix" href="./exterieur/harnaisRouge">
+        <Link className="choix" href="../../exterieur/harnaisRouge">
           <span>harnais rouge</span>
         </Link>
       </div>

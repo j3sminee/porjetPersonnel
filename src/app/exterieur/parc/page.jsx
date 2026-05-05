@@ -1,16 +1,18 @@
 "use client";
 import Link from "next/link";
 import "./videoPage.css";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 
 export default function Home() {
   const [showChoices, setShowChoices] = useState(false);
+  const videoRef = useRef(null);
+  const [isLoaded, setIsLoaded] = useState(false);
 
   //ajoute les choix juste à la fin de la vidéo
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowChoices(true);
-    }, 51000);
+    }, 4500);
 
     return () => clearTimeout(timer);
   }, []);
@@ -18,14 +20,14 @@ export default function Home() {
   //ajoute une classe "visible" quand les choix apparaîssent (pour ensuite pouvoir ajouter une transition plus smooth)
   return (
     <div className="page">
-      <video src="../../videos/barkmorning.webm" type="video/webm" autoPlay />
+      <video src="../videos/startall.webm" type="video/webm" autoPlay />
       <div className={`choixUsager ${showChoices ? "visible" : ""}`}> 
-        <Link className="choix" href="../../reveil/ignore">
-          <span>ignorer Darling</span>
+        <Link className="choix" href="./start/bark">
+          <span>aboyer pour l’alerter</span>
         </Link>
 
-        <Link className="choix" href="../../reveil/closed">
-          <span>fermer la porte</span>
+        <Link className="choix" href="./start/looksaround">
+          <span>chercher de l’aide autour de soi</span>
         </Link>
       </div>
     </div>
