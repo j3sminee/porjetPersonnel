@@ -35,8 +35,8 @@ export default function Home() {
     <div className="page">
       <video ref={videoRef} src="../../../vids/endwater.mp4" type="video/mp4" autoPlay />
       <div className={`choixUsager ${showChoices ? "visible" : ""}`}> 
-        <Link className="choix" href="./start">
-          <span>aller au parc</span>
+        <Link className="choix" href="../start">
+          <span>recommencer</span>
         </Link>
       </div>
     </div>
