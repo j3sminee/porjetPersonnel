@@ -5,7 +5,7 @@ import { useEffect, useState, useRef } from "react";
 
 export default function Home() {
   const [showChoices, setShowChoices] = useState(false);
-  const videoRef = useRef(null);
+  const videoRef = useRef();
 
   //ajoute les choix juste à la fin de la vidéo
   useEffect(() => {
@@ -13,7 +13,6 @@ export default function Home() {
       setShowChoices(true);
     }, 4500);
 
-    
     return () => clearTimeout(timer);
   }, []);
 
