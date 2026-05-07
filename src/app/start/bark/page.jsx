@@ -35,8 +35,8 @@ export default function Home() {
     <div className="page">
       <video
         ref={videoRef}
-        src="../../videos/barkmorning.webm"
-        type="video/webm"
+        src="../../vids/barkmorning.mp4"
+        type="video/mp4"
         preload="auto"
         autoPlay
       />
