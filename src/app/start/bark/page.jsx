@@ -23,7 +23,6 @@ export default function Home() {
     const handleCanPlay = () => {
       console.log("Video is ready to play");
       video.play().catch((e) => console.log("Auto-play prevented:", e));
-      setIsPlaying(true);
     };
     video.addEventListener("canplaythrough", handleCanPlay);
     return () => {
@@ -36,8 +35,8 @@ export default function Home() {
     <div className="page">
       <video
         ref={videoRef}
-        src="../../vids/startallCopy.mp4"
-        type="video/mp4"
+        src="../../videos/barkmorning.webm"
+        type="video/webm"
         preload="auto"
         autoPlay
       />
