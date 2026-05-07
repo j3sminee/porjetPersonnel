@@ -16,7 +16,7 @@ export default function Home() {
     
     return () => clearTimeout(timer);
   }, []);
-  
+
   useEffect(() => {
   const video = videoRef.current;
   if (!video) return;
@@ -32,7 +32,7 @@ export default function Home() {
 }, []);
   return (
     <div className="page">
-       <video ref={videoRef} src="../../videos/onlyharnaisbleu.webm" type="video/webm" autoPlay></video>
+       <video ref={videoRef} src="../../vids/onlyharnaisbleu.mp4" type="video/mp4" autoPlay></video>
        <div className={`choixUsager ${showChoices ? "visible" : ""}`}> 
         <Link className="choix" href="./stairs">
           <span>prendre les marches</span>

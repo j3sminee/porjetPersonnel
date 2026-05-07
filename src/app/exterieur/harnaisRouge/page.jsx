@@ -33,7 +33,7 @@ export default function Home() {
 
   return (
     <div className="page">
-       <video ref={videoRef} src="../../../videos/onlyharnaisrouge.webm" type="video/webm" autoPlay></video>
+       <video ref={videoRef} src="../../../vids/onlyharnaisrouge.mp4" type="video/mp4" autoPlay></video>
        <div className={`choixUsager ${showChoices ? "visible" : ""}`}> 
         <Link className="choix" href="./stairs">
           <span>prendre les marches</span>
