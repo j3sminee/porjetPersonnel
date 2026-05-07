@@ -12,7 +12,7 @@ export default function Home() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowChoices(true);
-    }, 4500);
+    }, 172000);
 
     return () => clearTimeout(timer);
   }, []);
@@ -20,14 +20,10 @@ export default function Home() {
   //ajoute une classe "visible" quand les choix apparaîssent (pour ensuite pouvoir ajouter une transition plus smooth)
   return (
     <div className="page">
-      <video src="../videos/startall.webm" type="video/webm" autoPlay />
+      <video src="../../../videos/champ.webm" type="video/webm" autoPlay />
       <div className={`choixUsager ${showChoices ? "visible" : ""}`}> 
-        <Link className="choix" href="./start/bark">
-          <span>aboyer pour l’alerter</span>
-        </Link>
-
-        <Link className="choix" href="./start/looksaround">
-          <span>chercher de l’aide autour de soi</span>
+        <Link className="choix" href="../ends/flowers">
+          <span>fin</span>
         </Link>
       </div>
     </div>

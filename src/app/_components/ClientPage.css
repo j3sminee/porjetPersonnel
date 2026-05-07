@@ -1,3 +1,11 @@
+.pageIntro{
+    background-image: url('../../../public/png/introPage.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+}
+
 .start {
   position: absolute;
   top: 50%;
@@ -14,6 +22,7 @@ h1{
   font-size: 60px;
   font-family: 'Courier New', Courier, monospace;
   text-align: center;
+  color: white;
 }
 
 h3{
@@ -21,11 +30,12 @@ h3{
   padding: 16px;
   font-family: 'Courier New', Courier, monospace;
   text-align: center;
+  color: white;
 }
 
 .begin{
-  color: rgb(191, 191, 191);
-  background-color: #191919;
+  color: #191919;
+  background-color: white;
   padding: 15px;
   font-family: 'Courier New', Courier, monospace;
   font-weight: 700;

@@ -10,7 +10,7 @@ export default function Home() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowChoices(true);
-    }, 4500);
+    }, 13000);
 
     return () => clearTimeout(timer);
   }, []);
@@ -18,12 +18,12 @@ export default function Home() {
     <div className="page">
        <video src="../../../videos/onlyharnaisrouge.webm" type="video/webm" autoPlay></video>
        <div className={`choixUsager ${showChoices ? "visible" : ""}`}> 
-        <Link className="choix" href="./start/bark">
-          <span>aboyer pour l’alerter</span>
+        <Link className="choix" href="./stairs">
+          <span>prendre les marches</span>
         </Link>
 
-        <Link className="choix" href="./start/looksaround">
-          <span>chercher de l’aide autour de soi</span>
+        <Link className="choix" href="./elevator">
+          <span>prendre l'ascenseur</span>
         </Link>
       </div>
     </div>
