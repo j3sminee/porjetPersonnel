@@ -47,3 +47,7 @@ a {
     color-scheme: dark;
   }
 }
+* span{
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 600;
+}
