@@ -16,7 +16,7 @@ export default function Home() {
     return () => clearTimeout(timer);
   }, []);
 
- /* useEffect(() => {
+  useEffect(() => {
   const video = videoRef.current;
   if (!video) return;
 
@@ -35,7 +35,7 @@ export default function Home() {
     video.removeEventListener("canplaythrough", handleCanPlay);
   };
 }, []);
-  */
+  
   //ajoute une classe "visible" quand les choix apparaîssent (pour ensuite pouvoir ajouter une transition plus smooth)
   return (
     <div className="page">
