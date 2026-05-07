@@ -13,23 +13,23 @@ export default function Home() {
       setShowChoices(true);
     }, 5000);
 
-    useEffect(() => {
-    const video = videoRef.current;
-    if (!video) return;
-
-    const handleCanPlay = () => {
-      console.log("Video is ready to play");
-      video.play().catch((e) => console.log("Auto-play prevented:", e));
-    };
-    video.addEventListener("canplaythrough", handleCanPlay);
-    return () => {
-      video.removeEventListener("canplaythrough", handleCanPlay);
-    };
-  }, []);
-
+    
     return () => clearTimeout(timer);
   }, []);
+  
+  useEffect(() => {
+  const video = videoRef.current;
+  if (!video) return;
 
+  const handleCanPlay = () => {
+    console.log("Video is ready to play");
+    video.play().catch((e) => console.log("Auto-play prevented:", e));
+  };
+  video.addEventListener("canplaythrough", handleCanPlay);
+  return () => {
+    video.removeEventListener("canplaythrough", handleCanPlay);
+  };
+}, []);
   //ajoute une classe "visible" quand les choix apparaîssent (pour ensuite pouvoir ajouter une transition plus smooth)
   return (
     <div className="page">
