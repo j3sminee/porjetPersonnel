@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import "./videoPage.css";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 
 export default function Home() {
   const [showChoices, setShowChoices] = useState(false);
@@ -18,7 +18,7 @@ export default function Home() {
   //ajoute une classe "visible" quand les choix apparaîssent (pour ensuite pouvoir ajouter une transition plus smooth)
   return (
     <div className="page">
-      <video src="../../videos/barkmorning.webm" type="video/webm" autoPlay />
+      <video src="../../videos/startallCopy.mp4" type="video/mp4" autoPlay />
       <div className={`choixUsager ${showChoices ? "visible" : ""}`}> 
         <Link className="choix" href="../../reveil/ignore">
           <span>ignorer Darling</span>
