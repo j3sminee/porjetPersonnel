@@ -16,15 +16,32 @@ export default function Home() {
     return () => clearTimeout(timer);
   }, []);
 
-  useEffect(() =>{
-    videoRef.current.play()
-  },[])
+  useEffect(() => {
+    const video = videoRef.current;
+    if (!video) return;
+
+    const handleCanPlay = () => {
+      console.log("Video is ready to play");
+      video.play().catch((e) => console.log("Auto-play prevented:", e));
+      setIsPlaying(true);
+    };
+    video.addEventListener("canplaythrough", handleCanPlay);
+    return () => {
+      video.removeEventListener("canplaythrough", handleCanPlay);
+    };
+  }, []);
 
   //ajoute une classe "visible" quand les choix apparaîssent (pour ensuite pouvoir ajouter une transition plus smooth)
   return (
     <div className="page">
-      <video ref={videoRef} src="../../videos/startallCopy.mp4" type="video/mp4" preload="auto" autoPlay />
-      <div className={`choixUsager ${showChoices ? "visible" : ""}`}> 
+      <video
+        ref={videoRef}
+        src="../../videos/startallCopy.mp4"
+        type="video/mp4"
+        preload="auto"
+        autoPlay
+      />
+      <div className={`choixUsager ${showChoices ? "visible" : ""}`}>
         <Link className="choix" href="../../reveil/ignore">
           <span>ignorer Darling</span>
         </Link>
