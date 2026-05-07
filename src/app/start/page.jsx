@@ -21,6 +21,8 @@ export default function Home() {
   const video = videoRef.current;
   if (!video) return;
 
+  videoRef.current.load();
+
   const handleCanPlay = () => {
     console.log("Video is ready to play");
     video.play().catch((e) => console.log("Auto-play prevented:", e));
