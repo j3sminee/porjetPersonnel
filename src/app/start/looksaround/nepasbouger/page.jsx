@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import "./videoPage.css";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 
 export default function Home() {
   const [showChoices, setShowChoices] = useState(false);
