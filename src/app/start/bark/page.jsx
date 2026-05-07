@@ -36,7 +36,7 @@ export default function Home() {
     <div className="page">
       <video
         ref={videoRef}
-        src="../../videos/startallCopy.mp4"
+        src="../../vids/startallCopy.mp4"
         type="video/mp4"
         preload="auto"
         autoPlay
