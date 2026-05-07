@@ -21,7 +21,11 @@ export default function Home() {
   const video = videoRef.current;
   if (!video) return;
 
+  console.log("use effect");
+
   videoRef.current.load();
+
+    videoRef.current.addEventListener("error", (event) => { console.log('video error', event);})
 
   const handleCanPlay = () => {
     console.log("Video is ready to play");
