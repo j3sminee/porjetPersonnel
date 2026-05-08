@@ -1,3 +1,4 @@
+/*photo en background de la page*/
 .pageIntro{
     background-image: url('../../../public/png/introPage.png');
     background-size: cover;
@@ -5,7 +6,7 @@
     width: 100vw;
     height: 95vh;
 }
-
+/*mettre le texte au milieu de la page*/
 .start {
   position: absolute;
   top: 50%;

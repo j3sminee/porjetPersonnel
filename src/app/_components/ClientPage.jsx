@@ -3,6 +3,7 @@ import "./ClientPage.css";
 
 export default function Home() {
   return (
+    //page intro du site
     <div className="pageIntro">
     <div className="start">
         <h1>Entre deux regards</h1>

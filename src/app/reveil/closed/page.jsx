@@ -11,7 +11,7 @@ export default function Home() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowChoices(true);
-    }, 5000);
+    }, 4000);
 
     
     return () => clearTimeout(timer);

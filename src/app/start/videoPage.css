@@ -31,7 +31,7 @@ video {
   transform: translateY(0);
   pointer-events: auto;
 }
-
+/*ajoute une animation au border (gradient qui fait un 360)*/
 .choix {
   text-transform: uppercase;
   background-color: #191919;
